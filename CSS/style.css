@@ -61,4 +61,11 @@ body{
 .logo2
 {
 	float:left;
+	align-items: left;
+}
+
+.signup
+{
+	float:right;
+	margin-right:10%;
 }
