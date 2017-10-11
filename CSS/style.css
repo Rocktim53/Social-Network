@@ -1,9 +1,19 @@
+
 body{
-	width: 100%;
 	height: 100%;
 	margin:0px;
 	padding:0px;
+	font-family: Helvetica, Arial, sans-serif;
 }
+
+.wrapper
+{
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
+
+/*========HEADER SECTION ===========*/
 
 .header
 {
@@ -12,39 +22,43 @@ body{
 	background-color: #009688;
 }
 
-.logo1
+
+.logoletter
 {
 	margin-top:7px;
 	margin-bottom:5px;
-	margin-left: 10%;
-	float: left;
+
 }
 
-.loginuser
+
+.loginuser /*--FORM--*/
 {
 	float:right;
-	margin-right: 5%;
-	margin-top: 5px;
+	margin-top: 8px;
 	color: white;
 	font-size: 14px;
 }
 
-#login tr td .inputtext
+#login tr td .inputtext 
 {
 	border: 1px solid black;
 	width: 145px;
 	height: 18px;
 }
 
-#login tr td
+#login tr td 
 {
 	border: 0px;
 	padding: 0px;
 	padding-left: 8px;
 }
 
+#logpassword
+{
+	font-size: 24px;
+}
 
-#login2
+#loginbutton
 {
 	border: 0px;
 	background-color: #43d854;
@@ -53,19 +67,123 @@ body{
 	font-size:14px;
 }
 
-#login2:hover
+#loginbutton:hover
 {
-	background-color: #81E58D;
+	background-color: #009688;
 }
 
-.logo2
+/*==========MAIN SECTION ========*/
+
+.main
 {
-	float:left;
-	align-items: left;
+	
+	width: 100%;
+	height: 100%;
+	background-color:#d7dbd7;
+	padding-bottom: 7%;
 }
 
-.signup
+.logopic
+{
+	position: relative;
+	margin-top: 8%;
+	width: 450px;
+	height: 350px;
+}
+
+.signup /* ---- SIGNUP SECTION --- */
 {
 	float:right;
-	margin-right:10%;
+	font-size: 18px;
+
+}
+
+
+.signup h1 /*---- SIGNUP HEADING --*/
+{
+	font-size: 45px;
+	margin: 0px;
+	padding-top: 10%;
+	padding-bottom: 4%;
+}
+
+.signup .inputtext2
+{
+	width: 250px;
+	height: 32px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid #bdc7d8;
+	padding-left: 8px 10px;
+}
+
+#signuptable tr td
+{
+	padding-bottom: 10px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+#pwd
+{
+	font-size:32px;
+}
+
+#signuptable #fm td
+{
+	text-align: left;
+}
+
+#signuptable tr #dob
+{
+	text-align: left;
+}
+
+#signuptable tr #dob select
+{
+	padding: 0px;
+	margin: 0px -4px;
+	border:2px solid #bdc7d8;
+	height: 32px;
+	font-size: 13px;
+}
+
+#joinnowbttn /*---JOING NOW BUTTON ---*/
+{
+
+	border:0px;
+	width: 100%;
+	height: 34px;
+	font-size: 18px;
+	background-color: #00aeef;
+	color:white;
+}
+
+#joinnowbttn:hover
+{
+	background-color: #4F82C3;
+}
+
+#joinbut
+{
+	height: 130px;
+}
+
+
+/*====== FOOTER ===========*/
+
+.footer
+{
+	/*height: 40px;*/
+}
+
+.foot
+{
+	background-color: white;
+}
+
+.foot p
+{
+	color: #666666;
+	text-align: center;
 }
