@@ -51,8 +51,18 @@ body{
 .signup /* ---- SIGNUP SECTION --- */
 {
 	font-size: 18px;
-	padding-top: 10%;
+	padding-top: 4%;
 
+}
+
+.signup img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 700px;
+	height: 120px;
 }
 
 #signuptable
@@ -65,8 +75,8 @@ body{
 
 #signuptable select
 {
-	width: 260px;
-	height: 34px;
+	width: 262px;
+	height: 36px;
 	font-size: 18px;
 	border-radius: 5px;
 	border: 1px solid #bdc7d8;
@@ -97,7 +107,7 @@ body{
 	padding-right: 10px;
 }
 
-#joinnowbttn /*---JOING NOW BUTTON ---*/
+#nextbttn /*---JOING NOW BUTTON ---*/
 {
 
 	border:0px;
@@ -108,12 +118,12 @@ body{
 	color: black;
 }
 
-#joinnowbttn:hover
+#nextbttn:hover
 {
 	background-color: #81E58D;
 }
 
-#joinbut
+#nextbut
 {
 	height: 60px;
 }
@@ -136,4 +146,11 @@ body{
 	color: #666666;
 	text-align: center;
 	padding-bottom: 2%;
+}
+
+/*----Removing the number increment in input --*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
