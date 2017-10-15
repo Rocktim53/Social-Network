@@ -1,0 +1,96 @@
+body
+{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	border:0px;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	width: 1100px;
+	height: 100%;
+}
+
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #009688;
+}
+
+.header .wrapper .logoletter
+{
+	padding-top: 5px;
+}
+
+#searching
+{
+	display: inline;
+}
+
+#search
+{
+	width: 400px;
+	background-image: url('../images/login/search.png');
+	background-position: 5px 4px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 10px 20px 10px 40px;
+	background-color: #E1E9EE;
+	border: 0px;
+	position : absolute;
+	top: 5px;
+	margin-left: 120px;
+}
+
+.icon-bar
+{
+	float: right;
+	width: 420px;
+	height: 50px;
+}
+
+.icon-bar ul
+{
+	margin:0px;
+	margin-top: 3px;
+	height: 50px;
+}
+
+.icon-bar ul li
+{
+  	display: inline;
+  	margin-left: 20px;
+  	padding: 4px;
+}
+.icon-bar img
+{
+	width: 34px;
+	height: 27px;
+}
+
+.icon-bar a
+{
+	width: 52px;
+	height: 50px;
+	position: relative;
+}
+.icon-bar a p
+{
+	display: inline;
+	position: absolute;
+	left:0px;
+	top: 2px;
+	color: black;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
+.icon-bar li:hover
+{
+	: white;
+}
