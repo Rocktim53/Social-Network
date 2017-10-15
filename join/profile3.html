@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>homaj</title>
+	<title>homaj Profile Picture</title>
 	<link rel="stylesheet" type="text/css" href="../css/styleprofile.css"/>
+	<script src="../javascript/profilescript.js"></script>
+
 </head>
 <body>
 
@@ -18,39 +20,25 @@
 
 		<div class="signup">
 			<!-- <h1>Join homaj today</h1> -->
-			<img src="../images/profile/profile1.png"/>
+			<img src="../images/profile/profile3.png"/>
 			<form>
+
 				<table id="signuptable">
+					
 					<tr>
-						<td style="padding-top:18px;"><select title="country">
-						<option value=0>India</option>
-						<option value=0>Argentina</option>
-						<option value=0>Spain</option>
-						<option value=0>United States</option>
+						<td style="padding-bottom:0px;"><img src="../images/profile/upload.png" id="load1" style="width:220px; height:230px;"/>
 						</td>
-					</tr>
+
+					</tr>		
 
 					<tr>
-						<td><input type="number" id="phoneno" class="inputtext2" placeholder="Phone number"/></td>
+						<td align="middle"> <input type="button" class="uploadButton" id="browser" value="Browse" />
+				 <input type="file" id="myFile" name="pic" accept="image/*" onchange="loadFile(event)" onmouseover="onbuttoncolor()" onmouseout="outbuttoncolor()"></td>
 					</tr>
-
-					<tr>
-						<td><input type="number" id="zipcode" class="inputtext2" placeholder="ZIP code"/></td>
-					</tr>
-
-					<tr>
-						<td><input type="text" id="state" class="inputtext2" placeholder="State"/></td>
-					</tr>
-
-					<tr>
-						<td><input type="text" id="District" class="inputtext2" placeholder="District"/>
-					</tr>
-
-				
 
 
 					<tr id="nextbut">
-						<td><input id="nextbttn" type="submit" value="Next"/></td>
+						<td><input id="nextbttn" type="submit" value="Let's Start" /></td>
 					</tr>
 
 				</table>

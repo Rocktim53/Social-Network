@@ -71,6 +71,7 @@ body{
 	margin-right: auto;
 	border: 2px solid #999999;
 	padding: 12px;
+	position: relative;
 }
 
 #signuptable select
@@ -128,6 +129,23 @@ body{
 	height: 60px;
 }
 
+#upload
+{
+	background-color: #00AEEF;
+	width: 80px;
+	height: 30px;
+	border:2px solid black;
+	margin:0px;
+	padding: 0px;
+	font-size: 16px;
+	color: white;
+
+}
+
+#upload:hover
+{
+	background-color: #4F82C3;
+}
 
 /*====== FOOTER ===========*/
 
@@ -153,4 +171,28 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+input[type="file"] {
+	display: inline;
+	border: 2px solid red;
+	position: absolute;
+	left: 12px;
+	width: 85%;
+	height: 30px;
+	opacity: 0;
+
+}
+
+
+.uploadButton {
+display: inline;
+background-color: #00AEEF;
+border: 0px;
+margin: 0px;
+padding: 0px;
+font-size: 16px;
+width: 97%;
+height: 30px;
+color: white;
 }
