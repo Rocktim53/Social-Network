@@ -1,0 +1,157 @@
+body
+{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	border:0px;
+	background-color: #d7dbd7;
+	font-family: arial;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	width: 1100px;
+	height: 100%;
+}
+
+/*============	HEADER	===================*/
+
+.logoletter:hover
+{
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #009688;
+	position: fixed;
+}
+
+.headerfixed
+{
+	width: 100%;
+	height: 50px;
+}
+
+.header .wrapper .logoletter
+{
+	padding-top: 5px;
+}
+
+#searching
+{
+	display: inline;
+}
+
+#search
+{
+	width: 420px;
+	background-image: url('../images/login/search.png');
+	background-position: 5px 4px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 10px 20px 10px 40px;
+	background-color: #E1E9EE;
+	border: 0px;
+	position : absolute;
+	top: 5px;
+	margin-left: 100px;
+}
+
+
+.icon-bar
+{
+	float: right;
+	/*width: 420px;*/
+	width: 410px;
+	height: 45px;
+}
+
+.icon-bar ul
+{
+	margin:0px;
+	margin-top: 3px;
+	height: 42px;
+	padding-left: 40px;
+}
+
+.icon-bar ul li
+{
+  	display: inline-block;
+  	/*margin-left: 20px;
+  	padding: 0px 5px;*/
+  	height: 42px;
+  	width: 70px;
+}
+.icon-bar img
+{
+	width: 34px;
+	height: 27px;
+	padding-left:20px;
+}
+
+.icon-bar a
+{
+	width: 52px;
+	height: 50px;
+	position: relative;
+}
+.icon-bar a p
+{
+	display: inline;
+	position: absolute;
+	left:0px;
+	top: 2px;
+	color: black;
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+
+#p1
+{
+	padding-left: 20px;
+}
+
+#p2
+{
+	padding-left: 20px;
+}
+
+#p3
+{
+	padding-left: 18px;
+}
+
+#p4
+{
+	padding-left: 10px;
+}
+
+#p5
+{
+	padding-left: 4px;
+}
+
+
+

@@ -130,23 +130,6 @@ body{
 	height: 60px;
 }
 
-#upload
-{
-	background-color: #00AEEF;
-	width: 80px;
-	height: 30px;
-	border:2px solid black;
-	margin:0px;
-	padding: 0px;
-	font-size: 16px;
-	color: white;
-
-}
-
-#upload:hover
-{
-	background-color: #4F82C3;
-}
 
 #nextbttn:active
 {
@@ -203,7 +186,9 @@ font-size: 16px;
 width: 97%;
 height: 30px;
 color: white;
+transition: width 1s ease-in-out;
 }
+
 
 #load1
 {

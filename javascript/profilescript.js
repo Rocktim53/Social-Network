@@ -5,10 +5,14 @@
 
  function onbuttoncolor()
  {
- 	document.getElementById("browser").style.backgroundColor = "#4F82C3";
+ 	var on=document.getElementById("browser");
+ 	on.style.backgroundColor = "#4F82C3";
+ 	on.style.width="50%";
  }
 
  function outbuttoncolor()
  {
- 	document.getElementById("browser").style.backgroundColor = "#00AEEF";
+ 	var out=document.getElementById("browser");
+ 	out.style.backgroundColor = "#00AEEF";
+ 	out.style.width="97%";
  }

@@ -90,6 +90,13 @@ body{
 	margin-top: 8%;
 	width: 450px;
 	height: 350px;
+	opacity: 1.0;
+	transition: opacity 1s ease-in-out;
+}
+
+.logopic:hover
+{
+	opacity: 0.5;
 }
 
 .signup /* ---- SIGNUP SECTION --- */
