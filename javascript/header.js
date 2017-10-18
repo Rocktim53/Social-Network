@@ -67,7 +67,7 @@ function showhide()
 	if(check==0)
 	{
 		msg1.style.height="400px";
-		msg2.style.borderBottom="2px solid #B7B7B7"
+		msg2.style.borderBottom="2px solid #BBBBBB"
 		check=1;
 	}
 	else
