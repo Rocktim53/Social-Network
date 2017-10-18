@@ -1,41 +1,61 @@
 /*====================	MAIN SECTION ================*/
 
+.content
+{
+	margin-top: 4%;
+}
+
 .sidebarleft
 {
-	width: 220px;
+	width: 240px;
 	height: 100px;
-	background-color: blue;
+	background-color: #FFFFFF;
 	position: fixed;
+	border: 1px solid #B7B7B7;
+	border-radius: 4px;
+	box-shadow: 2px 6px 6px #999999;
 }
 
 .leftfixed
 {
-	width: 220px;
+	width: 240px;
 	height: 100px;
 	float: left;
+	margin-right: 20px;
 }
 
 .main
 {
-	float: right;
-	width: 300px;
+	width: 526px;
 	height: 220px;
-	background-color: yellow;
-	position: fixed;
+	background-color: #FFFFFF;
+	border: 1px solid #B7B7B7;
+	/*position: fixed;*/
+	border-radius: 4px;
 
 }
 
-.mainfixed
+.mainnotfixed
+{
+	float: left;
+	width: 526px;
+	height: 1600px;;
+}
+
+.rightfixed
 {
 	float: right;
-	width: 300px;
-	height: 600px;;
+	width: 290px;
 }
 
 .sidebarright
 {
+	position: fixed;
 	float: right;
-	width: 580px;
-	height: 2220px;
-	background-color: red;
+	width: 290px;
+	height: 220px;
+	background-color: #FFFFFF;
+	border: 1px solid #B7B7B7;
+	border-radius: 4px;
+	box-shadow: 2px 6px 6px #999999;
 }
