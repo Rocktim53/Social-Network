@@ -77,3 +77,38 @@ function showhide()
 	}
 
 }
+
+function changelogo(connectID)
+{
+	var connect=document.getElementById(connectID);
+	// alert("hello");
+	// connect.style.width="0px";
+     connect.innerHTML="";
+	// connect.innerHTML="&#x2714";
+
+
+
+  connect.style.border= "8px solid #f3f3f3";
+  connect.style.borderRadius="50%";
+  connect.style.borderTop= "8px solid #009688";
+  connect.style.borderBottom= "8px solid #009688";
+  connect.style.width= "12px";
+  connect.style.height= "12px";
+  connect.style.margin="0px";
+  connect.style.animation= "spin 2s linear 2";
+  connect.style.marginRight="18px";
+  setTimeout(function(){
+  	  connect.style.animationPlayState= "paused";
+	  connect.style.border= "0px";
+	  connect.style.borderRadius="0px";
+	  connect.style.borderTop= "0px";
+	  connect.style.borderBottom= "0px";
+	  connect.style.animation= "";
+	  connect.style.margin="0px";
+	  connect.style.padding="0px";
+	  connect.style.marginRight="30px";
+	  connect.innerHTML="&#x2714";
+	  connect.style.color="#009688";
+	  connect.style.fontSize="28px"; }, 3000);
+	
+}
