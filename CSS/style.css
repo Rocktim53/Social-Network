@@ -70,6 +70,7 @@ body{
 #loginbutton:hover
 {
 	background-color: #009688;
+	border: 1px solid black;
 }
 
 
