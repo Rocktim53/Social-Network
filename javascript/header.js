@@ -87,7 +87,7 @@ function changelogo(connectID)
 	// connect.innerHTML="&#x2714";
 
 
-
+  connect.style.pointerEvents="none";
   connect.style.border= "8px solid #f3f3f3";
   connect.style.borderRadius="50%";
   connect.style.borderTop= "8px solid #009688";
@@ -109,6 +109,7 @@ function changelogo(connectID)
 	  connect.style.marginRight="30px";
 	  connect.innerHTML="&#x2714";
 	  connect.style.color="#009688";
-	  connect.style.fontSize="28px"; }, 3000);
+	  connect.style.fontSize="28px"; 
+	  connect.style.pointerEvents="none";}, 3000);
 	
 }

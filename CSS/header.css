@@ -420,7 +420,6 @@ body
 	text-align: center;
 	color: rgba(0,0,0,.85);
 	height: 19px;
-	border: 1px solid red;
 	padding: 1px;
 	border: 2px solid #B7B7B7;
 	border-radius: 4px;
@@ -435,6 +434,7 @@ body
 	border: none;
 	color: white;
 }
+
 
 .rightfixed hr
 {
@@ -496,6 +496,8 @@ body
 	display: block;
 	margin: 0 auto;
 } 
+
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }

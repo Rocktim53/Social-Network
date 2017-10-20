@@ -4,12 +4,12 @@
 	<title>Homaj Home</title>
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/home.css">
-
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
 	<script src="../javascript/header.js"></script>
 	<script src="../javascript/home.js"></script>
 
 </head>
-<body>
+<body onload="newpost();">
 	<div class="headerfixed">
 	<div class="header">
 		<div class="wrapper">
@@ -49,17 +49,49 @@
 					<p id="country">India</p>
 					<a href="profile.html" id="viewall">View All</a>
 					<hr>
-					<p id="nosociety">32</p>
+					<p id="nosociety">31</p>
 					<p id="societyname"><a href="society.html">Society</a></p>
 					<p id="logout"><a href="../index.html">Log Out</a></p>
 				</div>
 			</div>
 
-			<div class="mainnotfixed">
-				<div class="main">
+			<div class="mainnotfixed" id="mainnotfixed">
+				<div class="main">	
+					<button type="button" class="viewmore" onclick="mypost();">Post</button>
+				</div>
+				<hr>
+
+				<div class="allpost">
+					<div class="mainpost">
+						<div class="userimg"><img src="../images/profile/other_profile.png"/>
+						</div>
+					    <div class="username">				 <p class="name">User Name</p>
+					    </div>
+						<p class="time">1hr ago</p>
+						<p class="quotes">
+							Welcome to our society. You will be judged on what you wear, which music you listen to, what you look like, how you act, who you hang around with, and on practically every other personal trait and imperfection about you, and you'll be made fun of for being who you are. Enjoy your stay.
+						</p>
+						<div class="post">
+							<img class="postimg" src="../images/login/society.jpg"/>
+						</div>
+
+						<div class="likedislike">
+							<p class="like">
+								<span class="nooflike" id="1like">0 </span> likes &nbsp <span class="noofdislike" id="1dislike">0 </span> dislikes
+							</p>
+							<p class="likedisbttn">
+								<span class="fa fa-thumbs-up" onclick="increase();"></span> <span class="fa fa-thumbs-down" onclick="decrease();"></span>
+							</p>
+						</div>
+
+					</div>
+
 
 				</div>
+
+				<button type="button" class="viewmore" onclick="newpost();">View More</button>
 			</div>
+
 
 			<div class="rightfixed">
 				<div class="suggesfixed"><p id="suggestion">Suggestion</p><div>

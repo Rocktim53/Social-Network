@@ -73,6 +73,12 @@ body{
 	border: 1px solid black;
 }
 
+#loginbutton:active
+{
+	transform: translateX(8px);
+	box-shadow: 4px 5px 4px #666;
+}
+
 
 /*==========MAIN SECTION ========*/
 
