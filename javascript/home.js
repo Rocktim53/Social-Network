@@ -1,6 +1,6 @@
 var x=0;
 var y=12;
-
+var incre=2;
 function newpost()
 {
 	x=0;
@@ -69,7 +69,7 @@ function newpost()
 		/*........... Span nooflike ............*/
 		var span1=document.createElement("span");
 		span1.className="nooflike";
-		span1.id="1like";
+		span1.id="like"+incre;
 		var spantext=document.createTextNode("0 ");
 		span1.appendChild(spantext);
 		var text4=document.createTextNode(" likes \u00a0 ");
@@ -79,7 +79,7 @@ function newpost()
 	    /*........... Span noofdislike ............*/
 		var span2=document.createElement("span");
 		span2.className="noofdislike";
-		span2.id="1dislike";
+		span2.id="dislike"+incre;
 		var spantext1=document.createTextNode("0 ");
 		span2.appendChild(spantext1);
 		var text5=document.createTextNode(" dislikes");
@@ -92,18 +92,28 @@ function newpost()
 		/*........... Span fa fa-thumbs-up ............*/
 		var span3=document.createElement("span");
 		span3.className="fa fa-thumbs-up";
-		span3.setAttribute("onclick","increase();");
-		para4.appendChild(span3);
-		div4.appendChild(para4);
+		span3.id="thumbsup"+incre;
+		// span3.setAttribute("onClick",fun1);
+		// para4.appendChild(span3);
+		// div4.appendChild(para4);
 	    /*........... Span noofdislike ............*/
 		var span4=document.createElement("span");
 		span4.className="fa fa-thumbs-down";
-		span4.setAttribute("onclick","decrease();");
+		span4.id="thumbsdown"+incre;
+		/*^^^^^^^^^^ Span3 onclick code and append ^^^^^^^^^^*/
+		var fun1="increase"+"("+"'"+span1.id+"'"+","+"'"+span2.id+"'"+","+"'"+span3.id+"'"+","+"'"+span4.id+"'"+");";
+		span3.setAttribute("onClick",fun1);
+		para4.appendChild(span3);
+		div4.appendChild(para4);
+		/*^^^^^^^^^^ Span4 onclick code and append ^^^^^^^^^^*/
+		var fun2="decrease"+"("+"'"+span1.id+"'"+","+"'"+span2.id+"'"+","+"'"+span3.id+"'"+","+"'"+span4.id+"'"+");";
+		span4.setAttribute("onclick",fun2);
 		para4.appendChild(span4);
 		div4.appendChild(para4);
+		/*############## Appending DIV4 ############*/
 		div.appendChild(div4);
 
-
+		incre++;
 	}
 		
 }
@@ -123,36 +133,44 @@ function mypost()
 
 /*======== Like increase =========*/
 
-function increase()
+function increase(likerec,dislikerec,thumbsuprec,thumbsdownrec)
 {
-	var like=document.getElementById("1like");
+	var idname1=likerec;
+	var idname2=dislikerec;
+	var thumbsup=thumbsuprec;
+	var thumbsdown=thumbsdownrec;
+	var like=document.getElementById(idname1);
 	like.innerHTML=parseInt(like.innerHTML)+1;
-	var up=document.getElementsByClassName("fa-thumbs-up");
-	up[0].style.color= "#009688";
-	up[0].style.pointerEvents="none";
-	var down=document.getElementsByClassName("fa-thumbs-down")
-	if(down[0].style.color=="rgb(0, 150, 136)")
+	var up=document.getElementById(thumbsup);
+	up.style.color= "#009688";
+	up.style.pointerEvents="none";
+	var down=document.getElementById(thumbsdown)
+	if(down.style.color=="rgb(0, 150, 136)")
 	{
-		var dislike=document.getElementById("1dislike");
+		var dislike=document.getElementById(idname2);
 		dislike.innerHTML=parseInt(dislike.innerHTML)-1;
 	}
-	down[0].style.color="black";
-	down[0].style.pointerEvents="all";
+	down.style.color="black";
+	down.style.pointerEvents="all";
 }
 
-function decrease()
+function decrease(likerec,dislikerec,thumbsuprec,thumbsdownrec)
 {
-	var dislike=document.getElementById("1dislike");
+	var idname1=likerec;
+	var idname2=dislikerec;
+	var thumbsup=thumbsuprec;
+	var thumbsdown=thumbsdownrec;
+	var dislike=document.getElementById(idname2);
 	dislike.innerHTML=parseInt(dislike.innerHTML)+1;
-	var down=document.getElementsByClassName("fa-thumbs-down");
-	down[0].style.color= "#009688";
-	down[0].style.pointerEvents="none";
-	var up=document.getElementsByClassName("fa-thumbs-up");
-	if(up[0].style.color=="rgb(0, 150, 136)")
+	var down=document.getElementById(thumbsdown);
+	down.style.color= "#009688";
+	down.style.pointerEvents="none";
+	var up=document.getElementById(thumbsup);
+	if(up.style.color=="rgb(0, 150, 136)")
 	{
-		var like=document.getElementById("1like");
+		var like=document.getElementById(idname1);
 		like.innerHTML=parseInt(like.innerHTML)-1;
 	}
-	up[0].style.color="black";
-	up[0].style.pointerEvents="all";
+	up.style.color="black";
+	up.style.pointerEvents="all";
 }
