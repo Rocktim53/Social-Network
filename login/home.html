@@ -56,18 +56,34 @@
 			</div>
 
 			<div class="mainnotfixed" id="mainnotfixed">
-				<div class="main">	
-					<button type="button" class="viewmore" onclick="mypost();">Post</button>
+				<div class="main mainpost" style="margin-bottom:20px; padding-bottom:10px;">	
+
+					<div class="userimg"><img src="../images/profile/upload.png"/>
+						</div>
+					    <div class="username">				 <p class="name" style="top:15px;">Rajkumar Rocktim Narayan Singha</p>
+					    </div>
+						<p class="quotes">
+							<textarea id="mypara" placeholder="Share an article ,photo ,video or idea."></textarea>
+						</p>
+						<div class="post">
+							<img id="load2" class="postimg" src=""/>
+						</div>
+						<div class="postbar">
+							<input type="file" accept="images/*" id="chooseimg" onchange="loadFile(event)" onmouseover="onbuttoncolor()" onmouseout="outbuttoncolor()"/>
+							<button type="button" class="imgbttn" id="imgbttn">&#x1f4f7; Images</button>
+							<button type="button" id="postmypost" class="postmypost" onclick="mypost();">Post</button>
+						</div>
+
 				</div>
 				<hr>
 
 				<div class="allpost">
 					<div class="mainpost">
-						<div class="userimg"><img src="../images/profile/other_profile.png"/>
+						<div class="userimg"><img src="../images/homaj logo.png"/>
 						</div>
-					    <div class="username">				 <p class="name">User Name</p>
+					    <div class="username">				 <p class="name">homaj group</p>
 					    </div>
-						<p class="time">Just now</p>
+						<p class="time">8min ago</p>
 						<p class="quotes">
 							Welcome to our society. You will be judged on what you wear, which music you listen to, what you look like, how you act, who you hang around with, and on practically every other personal trait and imperfection about you, and you'll be made fun of for being who you are. Enjoy your stay.
 						</p>
@@ -89,7 +105,7 @@
 
 				</div>
 
-				<button type="button" class="viewmore" onclick="newpost();">View More</button>
+				<button type="button" id="viewmore" class="viewmore" onclick="newpost();">View More</button>
 			</div>
 
 
@@ -151,6 +167,7 @@
 
 			<div class="message" id="msg1">
 				<button id="msg2" onclick="showhide()">Messaging</button>
+				<p> No New Messages.</p>
 			</div>
 
 		</div>
