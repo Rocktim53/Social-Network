@@ -452,13 +452,14 @@ body
 }
 
 /*horizontal line below suggestion*/
-.rightfixed hr
+.rightfixed .sidebarright hr
 {
 	border: 0.5px solid #B7B7B7;
 	outline: 0px;
 	width: 80%;
 	box-shadow: 1px 1px 5px #999999;
 	margin-bottom: 12px;
+	position: relative;
 }
 
 /*about creator info design below suggestion*/
@@ -466,6 +467,8 @@ body
 {
 	background-color: white;
 	text-align: center;
+	position: relative;
+	top: -10px;
 }
 
 .foot ul
