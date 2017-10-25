@@ -346,6 +346,7 @@ body
 
 /*=========== SIDEBAR RIGHT =============*/
 
+/*parent of suggestion*/
 .rightfixed
 {
 	float: right;
@@ -354,6 +355,7 @@ body
 	clear: right;
 }
 
+/*parent of right content*/
 .sidebarright
 {
 	position: fixed;
@@ -367,11 +369,13 @@ body
 	padding: 20px;
 }
 
+/*design of suggestion content*/
 .suggesfixed
 {
 	position: fixed;
 }
 
+/*design of suggestion text*/
 #suggestion
 {
 	margin: 0px;
@@ -386,6 +390,7 @@ body
 	height: 300px;
 }
 
+/*design of rightcontent i.e suggestion*/
 .rightcontent
 {
 	/*margin-top: -20px;*/
@@ -394,7 +399,7 @@ body
 	height: 40px;
 }
 
-
+/*design userimage in suggestion*/
 .sidebarright .rightcontent img
 {
 	display: inline;
@@ -404,6 +409,7 @@ body
 	float: left;
 }
 
+/*design of username in suggestion*/
 .rightcontent p
 {
 	display: block;
@@ -417,6 +423,7 @@ body
 
 }
 
+/*design of connect in suggestion*/
 .rightcontent a
 {
 	display: block;
@@ -434,6 +441,7 @@ body
 	/*transition: width 2s ease-in-out;*/
 }
 
+/*hover effect on connect button*/
 .rightcontent a:hover
 {
 	background-color: #009688;
@@ -443,7 +451,7 @@ body
 	color: white;
 }
 
-
+/*horizontal line below suggestion*/
 .rightfixed hr
 {
 	border: 0.5px solid #B7B7B7;
@@ -453,6 +461,7 @@ body
 	margin-bottom: 12px;
 }
 
+/*about creator info design below suggestion*/
 .foot
 {
 	background-color: white;
@@ -482,12 +491,14 @@ body
 	font-size: 13px;
 }
 
+/*hover effect on link below suggestion*/
 .foot ul li a:hover
 {
 	color: #009688;
 	font-size: 14px;
 }
 
+/*copyright info design*/
 .foot p
 {
 	color: #666666;
@@ -497,6 +508,7 @@ body
 	padding-bottom: 1%;
 }
 
+/*homaj logo below suggestion*/
 .foot img
 {
 	width: 50px;
@@ -505,8 +517,7 @@ body
 	margin: 0 auto;
 } 
 
-
-
+/*creating animation when click connect*/
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }

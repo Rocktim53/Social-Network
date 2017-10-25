@@ -1,3 +1,4 @@
+// change header icon text color and image when mouse over it
 function headerchange(check)
 {
 	if(check==1)
@@ -27,6 +28,8 @@ function headerchange(check)
 	}
 }
 
+
+// change header icon text color and image to origin when mouseout
 function headerorigin(check)
 {
 	if(check==1)
@@ -58,7 +61,7 @@ function headerorigin(check)
 
 
 /* ============ Message button bottom =========*/
-var check=0;
+var check=0; // to check if it is show or not
 
 function showhide()
 {
@@ -66,12 +69,14 @@ function showhide()
 	var msg2=document.getElementById("msg2");
 	if(check==0)
 	{
+		//Expand message box
 		msg1.style.height="400px";
 		msg2.style.borderBottom="2px solid #BBBBBB"
 		check=1;
 	}
 	else
 	{
+		//Compress mesage box
 		msg1.style.height="30px";
 		check=0;
 	}
@@ -79,7 +84,7 @@ function showhide()
 }
 
 var society=0;
-
+// change logo of connect when click
 function changelogo(connectID)
 {
 	var connect=document.getElementById(connectID);
@@ -99,6 +104,7 @@ function changelogo(connectID)
   connect.style.margin="0px";
   connect.style.animation= "spin 2s linear 2";
   connect.style.marginRight="18px";
+  // change logo after 3 sec
   setTimeout(function(){
   	  connect.style.animationPlayState= "paused";
 	  connect.style.border= "0px";
@@ -114,6 +120,7 @@ function changelogo(connectID)
 	  connect.style.fontSize="28px"; 
 	  connect.style.pointerEvents="none";
 	  
+	  // increasing no. of society when clicked on connect
 	  society=society+1;
 
 	  var noofsociety=document.getElementById("nosociety");
