@@ -1,15 +1,19 @@
-var incre=3;
+var incre=3; //For incrementing the id name for like,dislike,thumbsup and thumbsdown
 
-function loading()
-{
+// function loading()
+// {
 
-}
+// }
 
+
+// function to load a new post when click on viewmore
 function newpost()
 {
     var loader=document.getElementById("viewmore");
 	loader.className="loader";
 	loader.innerHTML="";
+
+	// load new post after 3 sec
 	setTimeout(function()
 	{  
 
@@ -125,9 +129,12 @@ function newpost()
 	}
 
 	},3000);
+	// end of load a new post after 3 sec
 		
 }
 
+
+// function to post a new post
 function mypost()
 {
 	/*====Parent DIV (mainpost)========*/
@@ -267,6 +274,7 @@ function increase(likerec,dislikerec,thumbsuprec,thumbsdownrec)
 	down.style.pointerEvents="all";
 }
 
+/*============== Like decrease ================*/
 function decrease(likerec,dislikerec,thumbsuprec,thumbsdownrec)
 {
 	var idname1=likerec;
@@ -288,11 +296,14 @@ function decrease(likerec,dislikerec,thumbsuprec,thumbsdownrec)
 	up.style.pointerEvents="all";
 }
 
+
+// load view image to be posted
  var loadFile = function(event) {
 	    var output = document.getElementById('load2');
 	    output.src = URL.createObjectURL(event.target.files[0]);
 	  };
 
+// changing imagebutton color on hover
  function onbuttoncolor()
  {
  	var on=document.getElementById("imgbttn");
@@ -300,6 +311,7 @@ function decrease(likerec,dislikerec,thumbsuprec,thumbsdownrec)
  	on.style.color="white";
  }
 
+// chaging imagebutton color on hover out
  function outbuttoncolor()
  {
  	var out=document.getElementById("imgbttn");
