@@ -78,14 +78,16 @@ function showhide()
 
 }
 
+var society=0;
+
 function changelogo(connectID)
 {
 	var connect=document.getElementById(connectID);
 	// alert("hello");
 	// connect.style.width="0px";
      connect.innerHTML="";
-	// connect.innerHTML="&#x2714";
-
+     // connect.innerHTML="&#x2714";
+    
 
   connect.style.pointerEvents="none";
   connect.style.border= "8px solid #f3f3f3";
@@ -110,6 +112,12 @@ function changelogo(connectID)
 	  connect.innerHTML="&#x2714";
 	  connect.style.color="#009688";
 	  connect.style.fontSize="28px"; 
-	  connect.style.pointerEvents="none";}, 3000);
+	  connect.style.pointerEvents="none";
+	  
+	  society=society+1;
+
+	  var noofsociety=document.getElementById("nosociety");
+	  var place=parseInt(noofsociety.innerHTML)+1;
+	  noofsociety.innerHTML=place;}, 3000);
 	
 }

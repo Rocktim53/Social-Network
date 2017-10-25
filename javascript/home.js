@@ -1,4 +1,4 @@
-var incre=2;
+var incre=3;
 
 function loading()
 {
