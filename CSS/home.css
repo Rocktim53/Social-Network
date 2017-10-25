@@ -1,11 +1,14 @@
 /*====================	MAIN SECTION ================*/
 
+/*parent of main*/
 .mainnotfixed
 {
 	float: left;
 	width: 570px;
 	/*height: 240px;*/
 }
+
+/*to post an content section*/
 .main
 {
 	/*width: 558px;*/
@@ -20,6 +23,8 @@
 
 }
 
+/*horizontal line to seperate post and posted content*/
+
 .mainnotfixed hr
 {
 	border: 0.5px solid #B7B7B7;
@@ -29,6 +34,7 @@
 	margin-bottom: 18px;
 }
 
+/*same class naem of post and posted content*/
 .mainpost
 {	
 
@@ -41,6 +47,7 @@
 	margin-bottom: 5px;
 }
 
+/*user image size of the post and posted content*/
 .mainpost .userimg img
 {
 	width: 45px;
@@ -49,7 +56,7 @@
 	float: left;
 }
 
-
+/*user name design of post and posted content*/
 .mainpost .name
 {
 	display: inline;
@@ -61,6 +68,7 @@
 	/*float: left;*/
 }
 
+/*time of post of design for post and posted content*/
 .mainpost .time
 {
 	display: inline;
@@ -70,6 +78,7 @@
 	/*float: left;*/
 }
 
+/*parent of content image of the post and posted content*/
 .mainpost .post
 {
 	/*padding: 30px;*/
@@ -78,7 +87,7 @@
 }
 
 
-
+/*content image of the post and posted content*/
 .mainpost .postimg
 {
 	max-width: 100%;
@@ -87,6 +96,7 @@
 	margin: 0 auto;
 }
 
+/*paragraph of the posted content*/
 .mainpost .quotes
 {
 	margin: 12px 4px 8px 4px;
@@ -97,6 +107,7 @@
 	padding: 5px;
 }
 
+/*post article of the input area*/
 .main .quotes textarea
 {
 	margin-top: 8px;
@@ -112,12 +123,14 @@
 	box-sizing: border-box;
 }
 
+/*post bar where post and image button available*/
 .main .postbar
 {
 
 	padding: 10px 10px 1px 10px;
 }
 
+/*design button of post in postbar*/
 .main .postbar .imgbttn
 {	
 	display: inline;
@@ -132,7 +145,7 @@
 	box-shadow: 3px 3px 5px #999999;
 }
 
-
+/*design button of post in postbar*/
 .main .postbar .postmypost
 {
 	display: inline;
@@ -146,12 +159,14 @@
 	box-shadow: 3px 3px 5px #999999;
 }
 
+/*post button hover effect*/
 .main .postbar .postmypost:hover
 {
 	background-color: #009688;
 	color: white;
 }
 
+/*post button when click effect*/
 .main .postbar .postmypost:active
 {
   background-color: #4CAF50;
@@ -159,7 +174,7 @@
   transform: translateY(5px);
 }
 
-
+/*choose image which overwritten by imgbttn*/
 .main .postbar #chooseimg
 {
 	width: 90px;
@@ -175,6 +190,7 @@
 	max-height: 150px;
 }
 
+/*like count in posted content*/
 .likedislike .like
 {
 	font-size: 11px;
@@ -182,6 +198,7 @@
 	color: #999;
 }
 
+/*like dislike button section in posted section*/
 .likedisbttn
 {
 	margin: 0px;
@@ -189,6 +206,7 @@
 	padding: 5px;
 }
 
+/*common class for like and dislike button*/
 .likedisbttn .fa
 {
 	/*color: #009688;*/
@@ -196,28 +214,32 @@
 	margin-right: 10px;
 }
 
+/*like button of posted content*/
 .likedisbttn .fa-thumbs-up
 {
 	margin-left: 8px;
 }
 
-
+/*dislike button of posted content*/
 .likedisbttn .fa-thumbs-down
 {
 	margin-left: 13px;
 }
 
+/*mouse over effect in like and dislike button*/
 .likedisbttn .fa:hover
 {
 	color: #2196F3;
 	/*color: red;*/
 }
 
+/*mouse click effect in like and dislike button*/
 .likedisbttn .fa:active
 {
   	transform: translateY(2px);
 }
 
+/*view more button in main content*/
 .viewmore
 {
 	display: block;
@@ -232,6 +254,8 @@
 	font-size: 16px;
 }
 
+/*view more button when click change class name to loader*/
+
 .loader {
 	display: block;
 	margin: 35px auto;
@@ -245,6 +269,7 @@
 	-webkit-animation: spin 1s linear infinite;
 	animation: spin 1s linear infinite;
 }
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
