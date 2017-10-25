@@ -4,7 +4,7 @@
 
 ### A gender-equal Society
 
-##Sample Images
+## Sample Images
 
 #### logo
 ![Sample Portfolio](https://github.com/Rocktim53/Social-Network/blob/master/images/homaj%20logo.png)
