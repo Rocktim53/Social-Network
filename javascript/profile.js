@@ -36,7 +36,6 @@ function showSlides(n)
 
 	slide[slideIndex-1].style.display="block";
 	bubble[slideIndex-1].className+=" active";
-	edit=0;
 	if(click==0)
   		time1=setTimeout(function(){showSlides(slideIndex+=1);},4000);
   	else if(click==1)
@@ -45,7 +44,7 @@ function showSlides(n)
 
 
 
-// load view image to be posted
+// load view image to slideshow
  var loadFile = function(event) {
 	    var output = document.getElementsByClassName("slidimg");
 	    output[slideIndex-1].src = URL.createObjectURL(event.target.files[0]);
@@ -65,3 +64,9 @@ function starttime()
 	if(click==0)
 	showSlides(slideIndex);
 }
+
+// load view image to profile pic
+ var loadFile1 = function(event) {
+	    var output = document.getElementsByClassName("profilepic");
+	    output[0].src = URL.createObjectURL(event.target.files[0]);
+	};
