@@ -212,7 +212,7 @@
 					<div class="Edit">
 						<span class="close" title="Close Modal" onclick="disablemodal(0)">&times;</span>
 						<h2 align="center">Personal Detail Edit</h2>
-						<form>
+						<form action="#" onsubmit="return false">
 							<br/>
 							<label for="fname">First Name</label>
 							<br/>
@@ -304,7 +304,7 @@
 							<input type="text" id="religion" placeholder="Enter Religion" required/>
 							
 							<br/>
-						    <button type="submit">Update</button>
+						    <button type="submit" onclick="update1()">Update</button>
 
 						    <br/>
 					    <button type="button" class="cancelbtn" onclick="disablemodal(0)">Cancel</button>
@@ -321,7 +321,7 @@
  					<div class="Edit">
  						<span class="close" title="Close Modal" onclick="disablemodal(1)">&times;</span>
 						<h2 align="center">Primary School Edit</h2>
- 							<form>
+ 							<form action="#" onsubmit="return false">
  								<br/>
 	 							<label for="pschool">Primary School</label>
 	 							<br/>
@@ -346,7 +346,7 @@
 	 							<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
 
 	 							<br/>
- 							    <button type="submit">Update</button>
+ 							    <button type="submit" onclick="update2(1)">Update</button>
 
  							    <br/>
 							    <button type="button" class="cancelbtn" onclick="disablemodal(1)">Cancel</button>
@@ -366,7 +366,7 @@
  						<span class="close" title="Close Modal" onclick="disablemodal(2)">&times;</span>
 						<h2 align="center">Secondary School Edit</h2>
 
- 							<form>
+ 							<form action="#" onsubmit="return false">
  								<br/>
 	 							<label for="sschool">Secondary School</label>
 	 							<br/>
@@ -391,7 +391,7 @@
 	 							<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
 
 	 							<br/>
- 							    <button type="submit">Update</button>
+ 							    <button type="submit" onclick="update2(2)">Update</button>
 
  							    <br/>
 							    <button type="button" class="cancelbtn" onclick="disablemodal(2)">Cancel</button>
@@ -411,7 +411,7 @@
 						<span class="close" title="Close Modal" onclick="disablemodal(3)">&times;</span>
 						<h2 align="center">Address Edit</h2>
 
-						<form>
+						<form action="#" onsubmit="return false">
 							<br/>
 							<label for="country">Country</label>
 							<br/>
@@ -433,7 +433,7 @@
 							<input type="number" id="zipcode" placeholder="Enter ZIP code" required/>
 
 							<br/>
-						    <button type="submit">Update</button>
+						    <button type="submit" onclick="update3()">Update</button>
 
 						    <br/>
 					    <button type="button" class="cancelbtn" onclick="disablemodal(3)">Cancel</button>
@@ -454,7 +454,7 @@
  						<span class="close" title="Close Modal" onclick="disablemodal(4)">&times;</span>
 						<h2 align="center">More About You Edit</h2>
 
- 							<form>
+ 							<form action="#" onsubmit="return false">
  								<br/>
 	 							<label for="interest">Interest In</label>
 	 							<br/>
@@ -466,7 +466,7 @@
 										    box-sizing: border-box;
 										    border-radius: 5px;
 										    font-size: 14px;" title="Interest" id="interest">
-								<option value="Interest in">Interest in</option>
+								<option value="Interest In">Interest In</option>
 								<option value="Men">Men</option>
 								<option value="Woman">Women</option>
 								<option value="Men and Woman">Men and Women</option>
@@ -482,7 +482,7 @@
 	 							<input type="text" id="lknown" placeholder="Enter Language Known" required/>
 
 	 							<br/>
- 							    <button type="submit">Update</button>
+ 							    <button type="submit" onclick="update4()">Update</button>
 
  							    <br/>
 							    <button type="button" class="cancelbtn" onclick="disablemodal(4)">Cancel</button>
