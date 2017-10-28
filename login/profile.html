@@ -115,7 +115,7 @@
 
  					<div class="container left">
 
- 						<p class="slideEdit2" title="Edit">&#9998;</p>
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal(0)">&#9998;</p>
  						<div class="content">
  							<h2>Personal Detail</h2>
  							<h4>Name:</h4>
@@ -136,7 +136,7 @@
 
  					<div class="container right">
 
- 						<p class="slideEdit2" title="Edit">&#9998;</p>
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal(1)">&#9998;</p>
  						<div class="content">
  							<h2>Primary Education</h2>
  							<h4>Primary School:</h4>
@@ -153,7 +153,7 @@
 
  					<div class="container left">
 
- 						<p class="slideEdit2" title="Edit">&#9998;</p>
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal(2)">&#9998;</p>
  						<div class="content">
  							<h2>Secondary Education</h2>
  							<h4>Secondary School:</h4>
@@ -170,7 +170,7 @@
 
  					<div class="container right">
 
- 						<p class="slideEdit2" title="Edit">&#9998;</p>
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal(3)">&#9998;</p>
  						<div class="content">
  							<h2>Address</h2>
  							<h4>Country:</h4>
@@ -187,7 +187,7 @@
 
  					<div class="container left">  
 
- 						<p class="slideEdit2" title="Edit">&#9998;</p>
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal(4)">&#9998;</p>
  						<div class="content">
  							<h2>More About You</h2>
  							<h4>Interested In:</h4>
@@ -202,6 +202,237 @@
 
  				</div>
  				<!-- End of timeline -->
+
+
+ 				<!-- Edit when click on timeline edit option -->
+ 				<!-- Personal Detail Edit -->
+ 				<div class="modal animate">
+					<div class="Edit">
+						<span class="close" title="Close Modal" onclick="disablemodal(0)">&times;</span>
+						<h2 align="center">Personal Detail Edit</h2>
+						<form>
+							<br/>
+							<label for="fname">First Name</label>
+							<br/>
+							<input type="text" id="fname" placeholder="Enter First Name" required/>
+
+							<br/>
+							<label for="lname">Last Name</label>
+							<br/>
+							<input type="text" id="lname" placeholder="Enter Last Name" required/>
+							
+							<br/>
+							<label for="email">Email</label>
+							<br/>
+							<input type="email" id="email" placeholder="Enter Email-ID" required/>
+
+							<br/>
+							<input type="radio" name="sex" id="male" required/>
+						<label for="male">Male</label></td>
+
+						<input type="radio" name="sex" id="female" style="margin-bottom: 12px;" required/>
+						<label for="female" id="fm1">Female</label></td>
+
+						<br/>
+							<label for="phoneno">Phone no</label>
+							<br/>
+							<input type="number" id="phoneno" placeholder="Enter Phone no" required/>
+
+							<br/>
+							<label for="religion">Religion</label>
+							<br/>
+							<input type="text" id="religion" placeholder="Enter Religion" required/>
+							
+							<br/>
+						    <button type="submit">Update</button>
+
+						    <br/>
+					    <button type="button" class="cancelbtn" onclick="disablemodal(0)">Cancel</button>
+					    <br/>
+						</form>
+
+					</div>
+ 				</div>
+ 				<!-- End of personal detail Edit -->
+
+ 				<!-- Primary school edit -->
+ 				<div class="modal animate">
+
+ 					<div class="Edit">
+ 						<span class="close" title="Close Modal" onclick="disablemodal(1)">&times;</span>
+						<h2 align="center">Primary School Edit</h2>
+ 							<form>
+ 								<br/>
+	 							<label for="pschool">Primary School</label>
+	 							<br/>
+	 							<input type="text" id="pschool" placeholder="Enter Primary School" required/>
+
+	 							<br/>
+	 							<label for="degree1">Degree</label>
+	 							<br/>
+	 							<input type="text" id="degree1" placeholder="Enter Degree" required/>
+	 							
+	 							<br/>
+	 							<label for="fstudy1">Field of Study</label>
+	 							<br/>
+	 							<input type="text" id="fstudy1" placeholder="Enter Field of Study" required/>
+
+	 							<br/>
+	 							<label for="syear1">Start Year</label>
+	 							<label style="position: absolute;left:50.6%;" for="eyear1">End Year</label>
+
+	 							<br/>
+	 							<input style="width:49%;" type="number" id="syear1" placeholder="Start Year" min="1970" max="2017" required/>	 		
+	 							<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
+
+	 							<br/>
+ 							    <button type="submit">Update</button>
+
+ 							    <br/>
+							    <button type="button" class="cancelbtn" onclick="disablemodal(1)">Cancel</button>
+							    <br/>
+	 						</form>
+
+ 						</div>
+
+ 				</div>	
+ 				<!-- End of primary school edit -->
+
+ 				<!-- Secondary school edit -->
+ 				<div class="modal animate">
+
+ 					<div class="Edit">
+
+ 						<span class="close" title="Close Modal" onclick="disablemodal(2)">&times;</span>
+						<h2 align="center">Secondary School Edit</h2>
+
+ 							<form>
+ 								<br/>
+	 							<label for="sschool">Secondary School</label>
+	 							<br/>
+	 							<input type="text" id="sschool" placeholder="Enter Secondary School" required/>
+
+	 							<br/>
+	 							<label for="degree2">Degree</label>
+	 							<br/>
+	 							<input type="text" id="degree2" placeholder="Enter Degree" required/>
+	 							
+	 							<br/>
+	 							<label for="fstudy2">Field of Study</label>
+	 							<br/>
+	 							<input type="text" id="fstudy2" placeholder="Enter Field of Study" required/>
+
+	 							<br/>
+	 							<label for="syear1">Start Year</label>
+	 							<label style="position: absolute;left:50.6%;" for="eyear1">End Year</label>
+
+	 							<br/>
+	 							<input style="width:49%;" type="number" id="syear1" placeholder="Start Year" min="1970" max="2017" required/>	 		
+	 							<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
+
+	 							<br/>
+ 							    <button type="submit">Update</button>
+
+ 							    <br/>
+							    <button type="button" class="cancelbtn" onclick="disablemodal(2)">Cancel</button>
+							    <br/>
+	 						</form>
+
+ 					</div>
+
+ 				</div>
+ 				<!-- End of Secondary school edit -->
+
+ 				<!-- Address edit -->
+ 				<div class="modal animate">
+
+					<div class="Edit">
+
+						<span class="close" title="Close Modal" onclick="disablemodal(3)">&times;</span>
+						<h2 align="center">Address Edit</h2>
+
+						<form>
+							<br/>
+							<label for="country">Country</label>
+							<br/>
+							<input type="text" id="country" placeholder="Enter Country" required/>
+
+							<br/>
+							<label for="state">State</label>
+							<br/>
+							<input type="text" id="state" placeholder="Enter State" required/>
+							
+							<br/>
+							<label for="district">District</label>
+							<br/>
+							<input type="text" id="district" placeholder="Enter District" required/>
+
+							<br/>
+							<label for="zipcode">ZIP code</label>
+							<br/>
+							<input type="number" id="zipcode" placeholder="Enter ZIP code" required/>
+
+							<br/>
+						    <button type="submit">Update</button>
+
+						    <br/>
+					    <button type="button" class="cancelbtn" onclick="disablemodal(3)">Cancel</button>
+					    <br/>
+						</form>
+
+					</div>
+
+ 				</div>
+ 				<!-- End of address edit -->
+
+
+ 				<!-- More about you edit -->
+ 				<div class="modal animate">
+
+ 					<div class="Edit">
+
+ 						<span class="close" title="Close Modal" onclick="disablemodal(4)">&times;</span>
+						<h2 align="center">More About You Edit</h2>
+
+ 							<form>
+ 								<br/>
+	 							<label for="interest">Interest In</label>
+	 							<br/>
+	 							<select style="width: 100%;
+										    padding: 10px 16px;
+										    margin: 12px 0;
+										    display: inline-block;
+										    border: 1px solid #ccc;
+										    box-sizing: border-box;
+										    border-radius: 5px;
+										    font-size: 14px;" title="Interest" id="interest">
+								<option value=0>Interest in</option>
+								<option value=1>Men</option>
+								<option value=2>Women</option>
+								<option value=3>Men and Women</option>
+
+								<br/>
+	 							<label for="hobby">Hobby</label>
+	 							<br/>
+	 							<input type="text" id="hobby" placeholder="Enter Hobby" required/>
+	 							
+	 							<br/>
+	 							<label for="lknown">Language Known</label>
+	 							<br/>
+	 							<input type="text" id="lknown" placeholder="Enter Language Known" required/>
+
+	 							<br/>
+ 							    <button type="submit">Update</button>
+
+ 							    <br/>
+							    <button type="button" class="cancelbtn" onclick="disablemodal(4)">Cancel</button>
+							    <br/>
+	 						</form>
+
+ 						</div>
+
+ 				</div>
+
 
 
 			</div>

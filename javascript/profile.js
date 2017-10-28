@@ -70,3 +70,18 @@ function starttime()
 	    var output = document.getElementsByClassName("profilepic");
 	    output[0].src = URL.createObjectURL(event.target.files[0]);
 	};
+
+
+function disablemodal(n)
+{
+	var modal=document.getElementsByClassName('modal');
+	modal[n].className=modal[n].className.replace(" animate"," deanimate");
+	setTimeout(function(){document.getElementsByClassName('modal')[n].style.display='none';},500);
+}
+
+function enablemodal(n)
+{
+	var modal=document.getElementsByClassName('modal');
+	modal[n].className=modal[n].className.replace(" deanimate"," animate");
+	document.getElementsByClassName('modal')[n].style.display='block';
+}
