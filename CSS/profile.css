@@ -307,6 +307,11 @@
 	width: 35%;
 }
 
+.container p
+{
+	margin: 4px;
+}
+
 /* The circles on the timeline  left*/
 .container::after
 {
