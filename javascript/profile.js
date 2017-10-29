@@ -179,6 +179,9 @@ function update1()
 	var dob=form[1].children[15].value+" "+form[1].children[16].value+" "+form[1].children[17].value;
 	document.getElementsByClassName('tcontent')[0].children[8].innerHTML=dob;
 
+	//updating name below profile pic
+	document.getElementById("sidename").innerHTML=form[1].children[3].value+" "+form[1].children[7].value;
+
 	if(form[1].children[19].checked==true)
 	{
 	
