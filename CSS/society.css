@@ -58,7 +58,7 @@
 	border: 2px solid #B7B7B7;
 	border-radius: 4px;
 	box-shadow: 2px 8px 6px rgba(0,0,0,0.4);
-	transition: box-shadow 0.2s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
 	cursor: pointer;
 }
 

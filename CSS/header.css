@@ -95,6 +95,7 @@ body
 	/*width: 420px;*/
 	width: 410px;
 	height: 45px;
+	position:relative;
 }
 
 .icon-bar ul
@@ -113,6 +114,45 @@ body
   	height: 42px;
   	width: 70px;
 }
+
+#notify
+{
+	position: absolute;
+	width: 80%;
+	height: 370px;
+	background-color: rgba(0,0,0,0.7);
+	right: -4px;
+	top:112%;
+	display:none;
+	animation: notifyzoom 0.5s;
+}
+
+@keyframes notifyzoom
+{
+	0%
+	{
+		transform: scaleY(0);
+	}
+	100%
+	{
+		transform: scaleY(1);
+	}
+}
+
+.icon-bar ul li:hover #notify
+{
+	display: block;
+}
+
+#notify p
+{
+	color:white;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
 .icon-bar img
 {
 	width: 34px;
